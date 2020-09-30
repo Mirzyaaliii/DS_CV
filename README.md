@@ -8,4 +8,5 @@ All implementation details for exwcuting the code is provided in the .ipynb file
 ## Approach
 
 CNN-based approach
+
 ResNet-based approach
