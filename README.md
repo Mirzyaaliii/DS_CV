@@ -1,5 +1,6 @@
-# Depper Systems - Computer Vision (DS_CV)
-## To identify the orientation of an image and correct the image accordingly
+# Identification of image orientation
+
+Aim - Identify the orientation of an image and correct the image orientation (i.e., make it upright)
 
 
 ## Implementation
