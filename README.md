@@ -26,11 +26,11 @@ ii) Residual Network (ResNet)-based Approach
 Both the network are trained on the given training data for two epochs. CNN-based network is optimized with RMSprop optimization technique, whereas ResNet is optimized using Adam optimization with 0.0001 learning rate.
 
 
-### Analysis:
-A recent trend indicates that a higher number of stacked layers of neural networks gives better results. However, current studies show that deeper neural networks are more challenging to train due to the problems, such as overfitting, vanishing gradient, etc. Although ResNet is deeper version of CNN, it solves these problem. The main reason behind this is the identity mapping. Due to the skip connections in ResNet, it would be easier to push the residual to zero than to fit an identity mapping by a stack of nonlinear layers. 
+### Why ResNet?
+A recent trend indicates that a higher number of stacked layers of neural networks gives better results. However, current studies show that deeper neural networks are more challenging to train due to the problems, such as overfitting, vanishing gradient, etc. Although ResNet is deeper version of CNN, it solves these problem. The main reason behind this is the identity mapping. Due to the skip connections in ResNet, it would be easier to push the residual to zero than to fit an identity mapping by a stack of nonlinear layers. Hence, ResNet is used here to improve the classification results compare to the CNN-based approach.
 
 ### Rotation:
-To rotate (correct) the images OpenCV is used -
+OpenCV is used to do rotation of the images to make it upright. The rotations are done based on the predictions and below rotation techniques are used -
 1) upright - do not rotate the image,
 2) rotated_left - rotate the image 90 degree clockwise,
 3) rotated_right - rotate the image 90 degree counterclockwise,
@@ -39,6 +39,6 @@ To rotate (correct) the images OpenCV is used -
 
 ## Results
 
--> Prediction of the test images are stored in .csv file in the result folder for both the approach.
+* Prediction of the test images are stored in .csv file in the result folder for both approaches.
 
--> results.txt file contains thh link of the .npy file of the size (5361, 64, 64, 3) and link of corrected images folder.
+* results.txt file contains link of the .npy file of the size (5361, 64, 64, 3) and link of corrected images folder.
