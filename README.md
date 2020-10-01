@@ -4,20 +4,27 @@
 
 ## Implementation
 
-All the implementation details for executing the code is provided in the .ipynb files -> change all the paths accordingly which is written at the top of the each .ipynb file
+All the implementation details for executing the code is provided in the .ipynb files -> change all the paths according to the instruction written for the each .ipynb file
 
 
 ## Approach
 
-We can formulate this problem as a classification problem and in which images are classifies into 4 classes - upright, rotated_left, rotated_right, or upside_down.
+We can formulate this problem as a classification problem. In particular, the task is to identify the rotation of the image. To solve this problem, feature mapping technique along with supervised learning is used to build efficient classifier for this task. Here, images are classifies into four categories: 
+1. upright
+2. rotated_left 
+3. rotated_right 
+4. upside_down
 
-After classifying the image, need to rotate it according to its orientation.
+For supervised training of classifier, labels are mapped with numerical values, i.e.,rotated_right - 0, rotated_left -1, upright - 2, upside_down - 3.  Image tensor is given as input to classifier along with the ground truth for supervised training. After classification, image is rotated upright according to its predicted orientation.
 
-For this problem, 2 Neural Network (NN)-based approach are analyzed which are as following:
+For classification purpose, two Deep Neural Network (DNN)-based approach are used as below:
 
-i) Convolution Neural Network (CNN)-based approach
+i) Convolution Neural Network (CNN)-based Approach
 
-ii) Residual Network (ResNet)-based approach
+ii) Residual Network (ResNet)-based Approach
+
+Both the network are trained on the given training data for two epochs. CNN-based network is optimized with RMSprop optimization technique, whereas ResNet is optimized using Adam optimization with 0.0001 learning rate.
+
 
 ### Analysis:
 A recent trend indicates that a higher number of stacked layers of neural networks gives better results. However, current studies show that deeper neural networks are more challenging to train due to the problems, such as overfitting, vanishing gradient, etc. Although ResNet is deeper version of CNN, it solves these problem. The main reason behind this is the identity mapping. Due to the skip connections in ResNet, it would be easier to push the residual to zero than to fit an identity mapping by a stack of nonlinear layers. 
