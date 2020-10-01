@@ -1,4 +1,4 @@
-# Depper Systems Computer Vision
+# Depper Systems - Computer Vision (DS_CV)
 ## To identify the orientation of an image and correct the image accordingly
 
 
