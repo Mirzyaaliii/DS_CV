@@ -1,7 +1,7 @@
 
 Results of the CIFAR10 CNN:
 
--> Link of the .npy file - https://drive.google.com/file/d/1yucn2HsjFK2tyB4ObjCQnEx49O7VX4Zu/view?usp=sharing
+-> Link of the .npy file - [https://drive.google.com/file/d/1yucn2HsjFK2tyB4ObjCQnEx49O7VX4Zu/view?usp=sharing](https://drive.google.com/file/d/1yucn2HsjFK2tyB4ObjCQnEx49O7VX4Zu/view?usp=sharing)
 
 -> Link of the test set images, as PNGs, with the corrected orientations - https://drive.google.com/drive/folders/1-2sm1pXT5-lx5jU2YZdsTY_3MB4wfRh_?usp=sharing
 
