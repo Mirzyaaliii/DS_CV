@@ -1,4 +1,4 @@
-# Identification of image orientation
+# Identification of Image Orientation
 
 Aim - Identify the orientation of an image and correct the image orientation (i.e., make it upright)
 
